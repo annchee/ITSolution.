@@ -185,16 +185,6 @@ header.nav-active {
     transition: 0.5s ease-out;
 }
 
-header.active {
-    position: fixed;
-    animation: fadeIn 0.5s ease forwards;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
 .header-container{
     display: flex;
     justify-content: space-between;
@@ -232,6 +222,7 @@ header.nav-active nav{
 }
 
 .navbar-link{
+    display: inline-block;
     font-size: 1rem;
     font-weight: 500;
     color: var(--primary-color);
@@ -528,6 +519,10 @@ address{
 .quick-links-list > li{
     padding-bottom: 1rem;
     font-size: .9rem;
+}
+
+.quicklink{
+    display: inline-block;
 }
 
 .footer-top .section-text,
@@ -979,5 +974,4 @@ address{
     .section-subtitle:not(:nth-child(2)){
         padding-top: 2rem;
     }
-
 }
